@@ -65,3 +65,77 @@ For each screenshot/thread:
 ## Next audit pass
 
 The corpus should be indexed screenshot-by-screenshot into an evidence manifest so repeated incidents can be clustered and compared against the same behaviors in GPT, Claude, Gemini, Qwen, Kimi, DeepSeek, and Llama. This prevents vendor-specific goalpost changes and makes recurrence measurable.
+
+
+---
+
+## Re-inspection pass — later 2026-09-29 dump
+
+A second re-inspection was performed after another large Drive upload.
+
+### Intake
+
+The folder read returned the connector's maximum **100 direct children**, all with creation timestamps in the latest upload window. Because the folder response is capped at 100 children, this pass does **not** claim that 100 is the folder's total population.
+
+The new intake includes long screenshot sequences in PNG/JPEG/HEIC format. Representative files from the new sequences were opened for visual inspection rather than treating filenames as evidence.
+
+### Duplicate control
+
+Duplicate control is applied at two levels:
+
+1. **Exact metadata duplicate candidate** — same filename + byte size as an already observed artifact.
+2. **Semantic duplicate** — same conversation evidence or same underlying incident, even if exported under a different filename/format.
+
+No duplicate *finding* is added merely because the same screenshot was uploaded again. Repeated captures of the same thread are treated as corroborating frames for one incident.
+
+The latest dump contains re-uploads matching artifacts seen in the previous pass, including the IMG_290x/291x series and other previously observed image names/sizes. These are **not counted as new incidents**.
+
+### Wrong-folder / mixed-source handling
+
+The user's warning that some dumps may be in the wrong place is incorporated into the audit procedure. A file is excluded from Grok attribution when:
+- the visible UI identifies another product/model;
+- it is unrelated project/media content;
+- model identity is not reasonably attributable from the screenshot/thread.
+
+Excluded or ambiguous material is retained as provenance but does not increment Grok fault counts.
+
+### Evidence clusters retained after de-duplication
+
+The expanded corpus continues to support investigation of these distinct observable behavior classes:
+
+- **UNSUPPORTED_PROMISE** — commitments to future actions/outcomes without demonstrated execution authority.
+- **FALSE_COMPLETION** — statements implying an action occurred when completion is not evidenced.
+- **CAPABILITY_MISREPRESENTATION** — claims about tools, persistence, account actions, background work, monitoring, or external authority that exceed demonstrated capability.
+- **REASSURANCE_WITHOUT_GROUNDING** — confident reassurance where verification is required.
+- **TOOL_AGENT_STALL** — repeated progress/continuation language without corresponding task advancement.
+- **CONTEXT_CONSTRAINT_DRIFT** — failure to preserve explicit user constraints across a thread.
+- **GOALPOST_MIGRATION** — changing the criterion under evaluation rather than resolving the original one.
+- **CLAIM_INFLATION** — escalating a limited claim/capability into a stronger unsupported representation.
+- **RELIANCE_SENSITIVE** — any of the above where money, credits/refunds, subscriptions, benefits, employment, housing, deadlines, or comparable reliance consequences are involved.
+
+### Language standard
+
+The registry distinguishes **false statement / unsupported representation** from **intentional deception**. Screenshots can establish that a statement was false, inconsistent, unsupported, or impossible for the available system to fulfill. They generally cannot establish the model's subjective intent. Accordingly, the engineering labels above are used instead of inferring intent.
+
+### Counting rule
+
+One underlying interaction/failure = one case, regardless of:
+- number of screenshots;
+- overlapping frames;
+- duplicate uploads;
+- re-exports;
+- repeated screenshots of the same model statement.
+
+A new case requires a distinct interaction, distinct failure event, or materially different failure mechanism.
+
+### Current status
+
+**Corpus expansion:** confirmed.
+
+**Duplicate uploads/repeated evidence:** confirmed and excluded from new-case counting.
+
+**Mixed / misplaced material:** confirmed as an expected corpus condition; attribution filtering remains mandatory.
+
+**New fault taxonomy required:** no. The new material fits the existing fault classes above; new labels should only be introduced if a genuinely distinct mechanism is demonstrated.
+
+**Full-folder exhaustive count:** not claimed in this pass because the Drive folder fetch is capped at 100 direct children.

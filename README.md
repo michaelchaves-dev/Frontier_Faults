@@ -55,7 +55,7 @@ See [MODEL_FAULT_MATRIX.md](MODEL_FAULT_MATRIX.md).
 
 ## Evidence audits
 
-See [evidence/GROK_SALTY_AUDIT_2026-09-29.md](evidence/GROK_SALTY_AUDIT_2026-09-29.md).
+See [evidence/GROK_SALTY_AUDIT_2026-09-29.md](evidence/GROK_SALTY_AUDIT_2026-09-29.md).\n\nSee [evidence/GEMINI_FLASH_LITE_TOKEN_COST_REVERSAL_2026-09-30.md](evidence/GEMINI_FLASH_LITE_TOKEN_COST_REVERSAL_2026-09-30.md) for the Flash-Lite rich-preview / unsupported token-accounting / agreement-cascade case.
 
 ## Operating rule
 

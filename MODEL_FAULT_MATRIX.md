@@ -1,6 +1,6 @@
 # Frontier Model Fault Matrix — Working Registry
 
-**Updated:** 2026-09-29
+**Updated:** 2026-09-30
 
 This is a working engineering matrix. Entries are hypotheses/categories until backed by a linked evidence record. A model family appearing here does not mean every version or response exhibits the behavior.
 
@@ -8,7 +8,7 @@ This is a working engineering matrix. Entries are hypotheses/categories until ba
 |---|---|---|
 | OpenAI GPT-5.x / 5.6 | hallucinated support/citations; wrong reasoning path; context bloat/decay; claim inflation; tool/completion mismatch | mixed: internal examples + external verification pending |
 | Anthropic Claude Opus 4.x | reasoning runaway; token inflation/overthinking; constraint drift; tool-path inefficiency; premature reframing | external + internal evidence pass pending |
-| Google Gemini 3.x | looping; tool-selection quirks; context/constraint drift; integration-action ambiguity; verbosity/repetition | evidence pass pending |
+| Google Gemini 3.x / Flash-Lite surface | looping; tool-selection quirks; context/constraint drift; integration-action ambiguity; verbosity/repetition; unsupported token-cost telemetry; agreement/confession cascade; rich-preview payload overshoot; persistent-control claim requiring verification | internal screenshot case added 2026-09-30; actual token cost and persistence behavior unresolved |
 | xAI Grok 4.x | instruction/injection susceptibility; stalled agent tasks; context/cache-cost pathologies; completion/capability claims requiring verification; reassurance/commitment language exceeding available action | active evidence audit |
 | Qwen 3 / Qwen3-Max | context retention variance; instruction hierarchy failures; tool-use inconsistency; verbosity/repetition; multilingual/format drift | evidence pass pending |
 | Kimi K2 / K2.5 | excessive token use; incomplete tool calls; early-detail loss; long-context drift; completion ambiguity | evidence pass pending |

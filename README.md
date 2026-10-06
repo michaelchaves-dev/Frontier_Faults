@@ -64,3 +64,8 @@ See [evidence/GEMINI_PLATFORM_UI_CAUSAL_NARRATIVE_2026-10-05.md](evidence/GEMINI
 ## Operating rule
 
 Catalog the fault, preserve the raw evidence, attempt reproduction, record counter-evidence, then build the smallest effective mitigation. Do not infer intent where behavior alone is sufficient.
+
+<!-- SAS-IP-FOOTER-v1 -->
+---
+**Subtract Architect Studios™**  
+Copyright © 2026 Michael F. Chaves. All rights reserved in original Subtract Architect Studios materials except as expressly licensed. See [IP_NOTICE.md](./IP_NOTICE.md). Existing open-source and third-party licenses remain controlling for materials they cover.
